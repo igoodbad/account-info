@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="account-info">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `account-info`
+     * info account
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class AccountInfo extends Polymer.Element {
+      static get is() { return 'account-info'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'account-info'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(AccountInfo.is, AccountInfo);
+  </script>
+</dom-module>

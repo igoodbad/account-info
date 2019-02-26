@@ -1,0 +1,63 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="account-info">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      .balance-style {
+        font-size: 3rem;
+        color: #000;
+      }
+
+      .currency-style {
+        font-size: 1rem;
+        color: #828282;
+        vertical-align: top;
+      }
+
+      .describe-style {
+        font-size: 1rem;
+        color: #bbb;
+      }
+    </style>
+    <p>
+      <span class="balance-style">{{balance}}</span><sup class="currency-style">{{currency}}</sup><br />
+      <span class="describe-style">{{describe}}
+        <p>
+  </template>
+
+  <script>
+    /**
+     * `account-info`
+     * info account
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class AccountInfo extends Polymer.Element {
+      static get is() { return 'account-info'; }
+      static get properties() {
+        return {
+          balance: {
+            type: String,
+            value: "100,000.00"
+          },
+          currency: {
+            type: String,
+            value: "MXN"
+          },
+          describe: {
+            type: String,
+            value: "Saldo disponible en pesos"
+          }
+        };
+      }
+    }
+
+    window.customElements.define(AccountInfo.is, AccountInfo);
+  </script>
+</dom-module>
