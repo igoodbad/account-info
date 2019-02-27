@@ -1,30 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>account-info demo</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <script src="../../webcomponentsjs/webcomponents-loader.js"></script>
+  <title>account-info demo</title>
 
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../account-info.html">
+  <script src="../../webcomponentsjs/webcomponents-loader.js"></script>
 
-    <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-      </style>
-    </custom-style>
-  </head>
-  <body>
-    <div class="vertical-section-container centered">
-      <h3>Basic account-info demo</h3>
-      <demo-snippet>
-        <template>
-          <account-info></account-info>
-        </template>
-      </demo-snippet>
-    </div>
-  </body>
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../account-info.html">
+
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+      .temporal-style {
+        width: 100%;
+        border: 0.1em solid black;
+      }
+    </style>
+  </custom-style>
+</head>
+
+<body>
+  <div class="vertical-section-container centered">
+    <h3>Basic account-info demo</h3>
+    <demo-snippet>
+      <template>
+        <account-info class="temporal-style"></account-info>
+      </template>
+    </demo-snippet>
+  </div>
+</body>
+
 </html>
