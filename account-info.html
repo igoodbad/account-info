@@ -6,16 +6,18 @@
       :host {
         display: block;
       }
-
+      .p-container{
+        text-align: center;
+      }
       .balance-style {
         font-size: 3rem;
         color: #000;
       }
 
       .currency-style {
-        font-size: 1rem;
+        font-size: 1.4rem;
         color: #828282;
-        vertical-align: top;
+        vertical-align: super;
       }
 
       .describe-style {
@@ -23,10 +25,10 @@
         color: #bbb;
       }
     </style>
-    <p>
-      <span class="balance-style">{{balance}}</span><sup class="currency-style">{{currency}}</sup><br />
-      <span class="describe-style">{{describe}}
-        <p>
+    <p class="p-container">
+      <span class="balance-style">{{balance}}<sup class="currency-style">{{currency}}</sup></span><br />
+      <span class="describe-style">{{describe}}</span>
+    </p>
   </template>
 
   <script>
